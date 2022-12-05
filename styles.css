@@ -1,0 +1,409 @@
+html {
+    font-family: "League Spartan Regular";
+    font-size: 16px;
+}
+html, body {
+    margin: 0;
+}
+h2 {
+    font-size: 2.25rem;
+}
+@font-face {
+    font-family: "League Spartan Regular";
+    src: url(fonts/LeagueSpartan-Regular.ttf);
+}
+@font-face {
+    font-family: "League Spartan Bold";
+    src: url(fonts/LeagueSpartan-Bold.ttf);
+}
+@font-face {
+    font-family: "League Spartan Thin";
+    src: url(fonts/LeagueSpartan-Thin.ttf);
+}
+.league-thin {
+    font-family: "League Spartan Thin", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a.bold {
+    font-family: "League Spartan Bold";
+    text-decoration: underline;
+    color: black;
+}
+.main-content {
+    top: 5.625rem;
+    position: relative;
+}
+.center {
+    text-align: center;
+}
+.img-container img {
+    display: block;
+    max-width: 100%;
+}
+.img-container2 img {
+    display: block;
+    max-width: 100%;
+}
+.img-container3 img {
+    display: block;
+    max-width: 100%;
+}
+.img-container4 img {
+    display: block;
+    max-width: 100%;
+}
+.space {
+    background-color: white;
+    height: 3.125rem;
+}
+
+
+ /* Header */
+header {
+    top: 0%;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 2px #00250a;
+    background-color: rgb(157, 164, 170);
+    height: 5.625rem;
+}
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  .header-content h2 {
+    align-self: center;
+  }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 0.625rem;
+  }
+  nav li {
+    padding-left: 1rem;
+  }
+  .header-content nav a {
+    color: black;
+    font-size: 1rem;
+    font-family: "league spartan regular";
+  }
+.img-container {
+    width: 8.75rem;
+}
+
+@media only screen and (max-width: 895px) {
+    .img-container {
+        display: none;
+    }
+    .header-content h2 {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+    /* Banner & CTA */
+
+.banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 43.5rem;
+    background-image: url('media/sandstone-wall.jpg');
+    background-position: center;
+    background-size: 20%;
+    background-repeat:repeat;
+}
+.sign-up-cta {
+    background-color: #c6c1c1;
+    border-radius: 5%;
+    padding: .5rem;
+    margin-right: 0.625rem;
+    border: 1px solid black;
+}
+.img-container2 {
+    width: 6.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    background: radial-gradient(#D5C2A5, #574429, #A3947E);
+    padding: 1rem ;
+    max-width: 13rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px black;
+}
+.center .button {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 650px) {
+    .sign-up-cta h2 {
+        font-size: 1.8rem;
+    }
+}
+
+    /* Wares */
+
+#wares-section {
+    display: flex;
+    background: linear-gradient(to bottom right, #D5C2A5, #DDAE68, #D5C2A5, #574429, #A3947E);
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.wares-card {
+    padding: .5rem;
+    background-color: #c6c1c1;
+    line-height: 1;
+    flex: 1;
+    max-width: 25rem;
+    height: 18.75rem;
+}
+
+.content h2, .content h3 {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.wares-card .img-container3 {
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+#lower {
+    margin-top: 5.94rem;
+}
+
+@media only screen and (max-width: 895px) {
+    #wares-section {
+        padding: 0.5rem;
+        flex-flow: row wrap;
+    }
+    .wares-card {
+        width: 20rem;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .content h2, .content h3 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .content h2 {
+        font-size: 1.8rem;
+    }
+    .content h3 {
+        font-size: 1.1rem;
+    }
+    #lower {
+        margin-top: 4rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .content h2, .content h3 {
+        margin-top: 0.35rem;
+        margin-bottom: 0.35rem;
+    }
+    .content h2 {
+        font-size: 1.8rem;
+    }
+    .content h3 {
+        font-size: 1rem;
+    }
+    #lower {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #wares-section {
+        flex-direction: column;
+    }
+    .wares-card {
+        border-right: none;
+        border-left: none;
+        width: auto;
+    }
+}
+
+
+
+    /* Personel */
+.personel-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+    background-image: url('media/sandstone-wall.jpg');
+    background-position: center;
+    background-size: 15%;
+    background-repeat:repeat;
+}
+.personel-info h2 {
+    text-shadow: 1px 1px rgb(228, 228, 228);
+}
+
+#personel-section {
+    display: flex;
+    background: linear-gradient(to top left, #D5C2A5, #DDAE68, #D5C2A5, #574429, #A3947E);
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.personel-card {
+    padding: .5rem;
+    background-color: #c6c1c1;
+    line-height: 1;
+    flex: 1;
+    max-width: 25rem;
+    height: 28.125rem;
+}
+
+.personel-card .img-container4 {
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+}
+.content-p h2, .content-p h3 {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+#middle-card {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+
+
+@media only screen and (max-width: 895px) {
+    #personel-section {
+        padding: 0.5rem;
+        flex-flow: row wrap;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .content-p h2, .content-p h3 {
+        margin-top: 0.35rem;
+        margin-bottom: 0.35rem;
+    }
+    .content-p h2, .personel-info h2 {
+        font-size: 1.8rem;
+    }
+    .content-p h3 {
+        font-size: 1rem;
+    }
+    #middle-card {
+        margin-left: auto;
+        margin-right: auto;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .personel-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    #bottom-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .personel-info h2 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #personel-section {
+        flex-direction: column;
+    }
+    #middle-card {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: none;
+        border-left: none;
+        margin: 5px auto;
+    }
+}
+
+    /* Testamonial */
+
+.testamonial {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+.quote {
+    font-family: "League Spartan Thin";
+    margin-right: 25%;
+    text-decoration: underline 1px solid black;
+}
+
+.mario-card {
+    padding: .5rem;
+    background-color: #A3947E;
+    line-height: 1;
+    flex: 1;
+    max-width: 32rem;
+    height: fit-content;
+    margin-right: 25%;
+}
+
+.mario-card .img-container {
+    width: 30rem;
+    margin: 0 auto;
+}
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 895px) {
+    .testamonial {
+        flex-wrap: wrap;
+    }
+    .quote {
+        margin: 0 auto;
+    }
+    .mario-card {
+      display: none;
+    }
+    
+    .mobile {
+        display: inline-block;
+        text-decoration: underline 1px solid black;
+    }
+}
+
+    /* Footer */
+
+footer {
+    background-color: #A3947E;
+}
+
+footer .content-f {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-p p {
+    z-index: 10;
+    font-family: "League Spartan Regular";
+}
